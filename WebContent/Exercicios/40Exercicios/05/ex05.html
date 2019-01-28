@@ -5,7 +5,7 @@
     <title>JS Examples</title>
 </head>
 <body>
-<p>Nome Completo:</p>
+<p>Name:</p>
 <input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome"/>
 <br />
 <input type="button" value="Exibir Nome" id="btn-exibir-nome"/>
@@ -13,7 +13,8 @@
 <script type="text/javascript">  
 document.getElementById("btn-exibir-nome").addEventListener("click", function() {
   const nomeCompleto = document.getElementById('nome-completo').value;
-  alert('O Nome Completo é: ' + nomeCompleto );	
+  var n = nomeCompleto.length;
+  alert('A quantidade de letra no nome é: ' + n );	
 });
 </script>
 </body>
